@@ -9,10 +9,10 @@ export class ProfileService {
    }
 
    getProjects(){
-    return this.http.get<any>("http://localhost:7000/projects");
+    return this.http.get<any>("https://portfolio-kirthi.herokuapp.com/projects");
    }
 
    getCompanies(){
-    return this.http.get<any>("http://localhost:7000/experience");
+    return this.http.get<any>("https://portfolio-kirthi.herokuapp.com/experience");
    }
 }
