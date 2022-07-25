@@ -1,0 +1,13 @@
+.navbar-nav .nav-item .nav-link:focus {
+    text-decoration: underline solid #FFD700 25%;
+    color: #000000 !important;
+    
+}
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline solid #FFD700 25%;
+    color: #000000 !important;
+    
+}
+.bg-light{
+    background-color: white !important;
+}

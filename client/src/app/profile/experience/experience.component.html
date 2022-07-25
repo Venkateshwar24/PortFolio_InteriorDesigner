@@ -1,0 +1,20 @@
+<div class="container" id="experience">
+    <div class="mt-5 mb-3  col-sm-5 col-lg-4 col- topic  py-1">
+        Experience
+    </div>
+
+    <div *ngFor="let company of companies">
+
+        <div class="card" style="width: 100%">
+            <div class="card-body">
+                <h5 class="card-title topic">{{company.company_name}}</h5>
+                <h6 class="card-subtitle mb-4 text-muted  ">Designation : {{company.company_designation}} </h6>
+                <p class="card-text text-muted wordings_font ">{{company.company_description}}</p>
+
+                <app-projects  [projects]="company.company_projects"></app-projects>
+            </div>
+
+        </div>
+    </div>
+
+</div>

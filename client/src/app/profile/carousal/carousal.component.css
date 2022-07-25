@@ -1,0 +1,11 @@
+img{
+    object-fit: none;
+    height: 500px;
+}
+
+@media (max-width: 600px) {
+    img {
+        object-fit: cover;
+        height: 300px;
+    }
+  }
