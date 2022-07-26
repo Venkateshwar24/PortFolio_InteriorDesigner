@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import {NgxSpinnerService} from 'ngx-spinner';
+import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
-  constructor(private spinner:NgxSpinnerService) { }
+loader =  true;
+  constructor(private wowService : NgwWowService) { 
+    wowService.init();
+  }
 
   ngOnInit(): void {
-    // this.spinner.show();
-    // setTimeout(() =>{
-    //   this.spinner.hide();
-    // }, 2000);
+    
+     setTimeout(() =>{
+      this.loader = false;
+     }, 3000);
   }
 
 }

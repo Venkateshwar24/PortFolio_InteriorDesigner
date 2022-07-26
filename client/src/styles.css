@@ -37,10 +37,20 @@
     text-transform: uppercase;
     letter-spacing: 0.133em;
     font-size: 25px;
-    
-    color: rgb(133, 132, 132);
-    
-    
+    color: rgb(133, 132, 132); 
+    text-decoration: underline 15% ; 
+}
+@media (max-width:992px) {
+    .topic {
+        font-family: Lato, helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.133em;
+        font-size: 20px;
+        color: rgb(133, 132, 132);  
+        text-decoration: underline 15% ;
+    }
 }
 
 .wordings_font{
@@ -50,9 +60,18 @@
     text-align: justify;
     font-weight: 100;
     font-size: 18px;
-
-  
 }
+
+@media (max-width:768px) {
+    .wordings_font{
+        line-height: 1em;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-weight: 100;
+        font-size: 14px !important;
+
+    }
+  }
 .project_titles{
     font-family:Lato, helvetica, sans-serif;
     text-transform: uppercase;
@@ -62,3 +81,15 @@
     text-decoration: underline 15% ;
     
 }
+@media (max-width:768px) {
+    .project_titles{
+        font-family:Lato, helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.133em;
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration: underline 15% ;
+        
+    }
+}
+

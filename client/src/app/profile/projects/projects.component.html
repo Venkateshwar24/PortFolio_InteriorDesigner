@@ -4,18 +4,17 @@
         <div class="card-body">
             <h5 class="card-title project_titles">{{project.project_name}}</h5>
             <h6 class="card-subtitle mb-4 text-muted  ">Project Type : {{project.project_type}} </h6>
-            <p class="card-text text-muted wordings_font mx-3 ">{{project.project_description}}</p>
+            <p class="card-text text-muted wordings_font  mx-2">{{project.project_description}}</p>
 
 
 
             <div *ngFor="let pro of project.project_files" class="my-5">
                 <div *ngIf="checkXtension(pro); else mp4">
-                    <img src="{{pro}}" class="card-img-top   p-0 shadow " alt="movie_image"
-                        style="max-width: 65%; height:auto">
+                    <img src="{{pro}}" class="card-img-top  img-sizing p-0 shadow " alt="render_image"
+                       >
                 </div>
                 <ng-template #mp4>
-                    <video class="video-fluid z-depth-1 shadow  " autoplay muted loop controls
-                        style="max-width: 65%; height:auto">
+                    <video class="video-fluid z-depth-1 shadow img-sizing "  oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted loop >
                         <source src="{{pro}}" type="video/mp4" />
                     </video>
                 </ng-template>

@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+    .img-sizing {
+      max-width: 100% !important;
+      height: auto;
+    }
+  }
+
+.img-sizing{
+  max-width: 70%; 
+  height:auto;
+}

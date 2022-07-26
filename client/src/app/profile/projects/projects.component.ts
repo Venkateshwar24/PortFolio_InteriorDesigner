@@ -23,7 +23,6 @@ export class ProjectsComponent implements OnInit {
     var period = filepath.lastIndexOf('.');
     var fileExtension = filepath.substring(period + 1);
     if((fileExtension === "jpg") || (fileExtension == "png") || (fileExtension == "jpeg")){
-      console.log(fileExtension);
       return true;
     }
     return false;

@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 
 import { NgwWowModule } from 'ngx-wow';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -27,7 +28,8 @@ import { NgwWowModule } from 'ngx-wow';
     ExperienceComponent,
     PersonalprojectsComponent,
     ContactComponent,
-    ResumeComponent
+    ResumeComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

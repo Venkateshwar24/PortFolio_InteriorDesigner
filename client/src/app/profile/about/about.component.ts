@@ -8,8 +8,8 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class AboutComponent implements OnInit {
 
-  constructor( ) { 
-   
+  constructor( wowService : NgwWowService) { 
+   wowService.init();
   }
 
   ngOnInit(): void {
