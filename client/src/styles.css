@@ -38,7 +38,6 @@
     letter-spacing: 0.133em;
     font-size: 25px;
     color: rgb(133, 132, 132); 
-    text-decoration: underline 15% ; 
 }
 @media (max-width:992px) {
     .topic {
@@ -49,7 +48,6 @@
         letter-spacing: 0.133em;
         font-size: 20px;
         color: rgb(133, 132, 132);  
-        text-decoration: underline 15% ;
     }
 }
 

@@ -12,9 +12,11 @@ import { PersonalprojectsComponent } from './personalprojects/personalprojects.c
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgwWowModule } from 'ngx-wow';
 import { FooterComponent } from './footer/footer.component';
+import { LoaderComponent } from './loader/loader.component';
+import { UploadViewComponent } from './upload-view/upload-view.component';
 
 
 
@@ -29,14 +31,18 @@ import { FooterComponent } from './footer/footer.component';
     PersonalprojectsComponent,
     ContactComponent,
     ResumeComponent,
-    FooterComponent
+    FooterComponent,
+    LoaderComponent,
+    UploadViewComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     RouterModule,
     NgxSpinnerModule,
-    NgwWowModule
+    NgwWowModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ]
 })

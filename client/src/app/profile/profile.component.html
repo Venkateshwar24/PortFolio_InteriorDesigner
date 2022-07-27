@@ -1,11 +1,7 @@
-<div *ngIf="loader"  class="center-loader display-6 wow slideOutUp"  data-wow-duration="3s" data-wow-delay="2s" >
-    <div class="spinner-grow text-dark" role="status"> 
-        <span class="visually-hidden">Loading...</span>
-        
-      </div>
-      <div class=""> Kirthi Portfolio</div>
-</div>
-<div *ngIf="!loader" class="wow fadeIn">
+<div *ngIf="loader" >
+<app-loader></app-loader>
+</div> 
+<div *ngIf="!loader" >
 <app-header></app-header>
 <app-carousal></app-carousal>
 <app-about></app-about>

@@ -7,10 +7,10 @@ var experienceSchema = new mongoose.Schema({
     creation_date : {type:String, required:true},
     creation_time : {type:String, required:true},
     company_projects : [{
-        project_name : {type:String, required:true},
-        project_type : {type:String, required:true},
-        project_description : {type:String, required:true},
-        project_files :[{type:String, required:true}]
+        project_name : {type:String},
+        project_type : {type:String},
+        project_description : {type:String},
+        project_files :[{type:String}]
     }],
     
 });
