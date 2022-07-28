@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title topic">{{company.company_name}}</h5>
                 <h6 class="card-subtitle mb-4 text-muted  ">Designation : {{company.company_designation}} </h6>
-                <p class="card-text text-muted wordings_font ">{{company.company_description}}</p>
+                <p class="card-text  wordings_font " style="white-space: pre-wrap;">{{company.company_description}}</p>
 
                 <app-projects  [projects]="company.company_projects"></app-projects>
             </div>

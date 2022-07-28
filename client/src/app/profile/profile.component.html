@@ -1,7 +1,7 @@
 <div *ngIf="loader" >
 <app-loader></app-loader>
 </div> 
-<div *ngIf="!loader" >
+<div [hidden]="loader" >
 <app-header></app-header>
 <app-carousal></app-carousal>
 <app-about></app-about>

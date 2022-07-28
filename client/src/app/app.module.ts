@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProfileModule } from './profile/profile.module';
 
 import { NgwWowModule } from 'ngx-wow';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NgwWowModule } from 'ngx-wow';
     BrowserModule,
     AppRoutingModule,
     ProfileModule,
-    NgwWowModule
+    NgwWowModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

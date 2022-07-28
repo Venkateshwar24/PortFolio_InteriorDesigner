@@ -1,5 +1,5 @@
 img{
-    object-fit: none;
+    object-fit:cover;
     height: 500px;
 }
 

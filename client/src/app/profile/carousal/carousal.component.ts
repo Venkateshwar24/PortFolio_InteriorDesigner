@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-carousal',
   templateUrl: './carousal.component.html',
@@ -11,5 +11,8 @@ export class CarousalComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+ 
 
+  
 }

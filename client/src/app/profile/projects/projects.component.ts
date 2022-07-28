@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
-
+import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -8,7 +8,9 @@ import { ProfileService } from '../profile.service';
 })
 export class ProjectsComponent implements OnInit {
 @Input() projects=[];
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
 

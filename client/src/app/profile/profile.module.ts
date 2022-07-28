@@ -17,7 +17,7 @@ import { NgwWowModule } from 'ngx-wow';
 import { FooterComponent } from './footer/footer.component';
 import { LoaderComponent } from './loader/loader.component';
 import { UploadViewComponent } from './upload-view/upload-view.component';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -42,7 +42,8 @@ import { UploadViewComponent } from './upload-view/upload-view.component';
     NgxSpinnerModule,
     NgwWowModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
     
   ]
 })

@@ -53,8 +53,8 @@
 
 .wordings_font{
     font-family:var(--bs-body-font-family);
-    line-height: 1em;
-    letter-spacing: 1px;
+    line-height: normal;
+    letter-spacing: normal;
     text-align: justify;
     font-weight: 100;
     font-size: 18px;
@@ -62,8 +62,8 @@
 
 @media (max-width:768px) {
     .wordings_font{
-        line-height: 1em;
-        letter-spacing: 1px;
+        line-height: normal;
+        letter-spacing: normal;
         text-align: justify;
         font-weight: 100;
         font-size: 14px !important;
