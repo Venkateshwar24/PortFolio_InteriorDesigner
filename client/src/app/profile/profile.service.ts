@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProfileService {
-private ServerUrl = "https://portfolio-kirthi.herokuapp.com";
+private ServerUrl = "https://portfolio-kirthi.onrender.com";
   constructor(private http:HttpClient) {
    }
 
