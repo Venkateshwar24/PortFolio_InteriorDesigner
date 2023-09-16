@@ -10,13 +10,23 @@
 
             <div *ngFor="let pro of project.project_files" class="my-5">
                 <div *ngIf="checkXtension(pro); else mp4">
-                    <img src="{{pro}}" class="card-img-top  img-sizing p-0 shadow  " alt="render_image"
-                       >
+                    <img [src]="pro" (load)="onImageLoaded(pro)" class="card-img-top  img-sizing p-0 shadow  " alt="render_image"
+                    [hidden]="!isImageLoaded(pro)">
+                       <div class="d-flex justify-content-center" *ngIf="!isImageLoaded(pro)">
+                        <div class="spinner-grow" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                      </div>
                 </div>
                 <ng-template #mp4>
                     <video class="video-fluid z-depth-1 shadow img-sizing "  oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted loop >
-                        <source src="{{pro}}" type="video/mp4" />
+                        <source [src]="pro" (load)="onImageLoaded(pro)" type="video/mp4" [hidden]="isImageLoaded(pro)===false" />
                     </video>
+                    <div class="d-flex justify-content-center" *ngIf="isImageLoaded(pro)===false">
+                        <div class="spinner-grow" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                      </div>
                 </ng-template>
             </div>
         </div>

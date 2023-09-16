@@ -8,6 +8,7 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class ProjectsComponent implements OnInit {
 @Input() projects=[];
+public loadedImages : {[imageLink :string] :boolean} = {};
   constructor() {
 
    }
@@ -15,11 +16,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-
-
-  
-
 
   checkXtension(filepath){
     var period = filepath.lastIndexOf('.');
@@ -29,5 +25,12 @@ export class ProjectsComponent implements OnInit {
     }
     return false;
     
+  }
+
+  onImageLoaded(image){
+    this.loadedImages[image] = true
+  }
+  isImageLoaded(image : string){
+    return this.loadedImages[image]
   }
 }
