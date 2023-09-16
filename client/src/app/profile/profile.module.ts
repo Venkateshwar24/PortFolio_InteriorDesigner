@@ -40,7 +40,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     RouterModule,
     NgxSpinnerModule,
-    NgwWowModule,
     FormsModule,
     ReactiveFormsModule,
     NgbModule

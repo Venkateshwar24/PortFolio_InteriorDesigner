@@ -17,7 +17,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     ProfileModule,
-    NgwWowModule,
     NgbModule
   ],
   providers: [],
