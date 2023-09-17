@@ -5,9 +5,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProfileService {
 private ServerUrl = "https://portfolio-kirthi.onrender.com";
+ adminUserName = "kirthi"
+ adminpassword = "Noodletheory"
+
   constructor(private http:HttpClient) {
    }
 
+
+   authenticate(username:string, password:string) : boolean{
+         if((username === this.adminUserName) && (password===this.adminpassword ))
+         return true
+        else
+        return false
+   }
    getProjects(){
     return this.http.get<any>(`${this.ServerUrl}/projects`);
    }

@@ -15,9 +15,10 @@ companies=[];
   }
 
   fetchCompanies(){
-    this.profileService.getCompanies().subscribe(res=>
+    this.profileService.getCompanies().subscribe(res=>{
       this.companies = res
-    ,
+      this.companies = this.companies.reverse()
+    },
     err => {
       console.log(err);
     });

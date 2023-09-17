@@ -12,7 +12,6 @@ loader =  true;
   }
 
   ngOnInit(): void {
-    
      setTimeout(() =>{
       this.loader = false;
      }, 3000);
