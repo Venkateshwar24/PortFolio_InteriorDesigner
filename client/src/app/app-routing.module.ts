@@ -10,8 +10,7 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   {
     path : '',
-    component : ProfileComponent,
-    canActivate : [authGuard]
+    component : ProfileComponent
   },
   {
     path : 'upload/admin',
